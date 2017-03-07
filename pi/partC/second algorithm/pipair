@@ -1,0 +1,2 @@
+#!/bin/bash
+opt -print-callgraph $1 2>&1 1>/dev/null | java -Xms128m -Xmx128m TestBug $2 $3 $4 2>/dev/null
